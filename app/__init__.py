@@ -15,8 +15,8 @@ authorizations = {
     "bearer": {
         "name": "Authorization",
         "in": "header",
-        "type": "apiKey",
-        "description": "Insert your JWT Token here!"
+        "type": "token",
+        "description": "Informe seu token de autenticação"
     }
 }
 api = Api(app, title="CRUD de Comandas", version="1.0", description="Restful API com Flask para Suficiencia de Web II", prefix="/api", authorizations=authorizations)
